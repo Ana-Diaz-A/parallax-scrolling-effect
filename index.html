@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>parallax scrolling effect</title> <!--TITLE-->
+	<link rel="stylesheet" href="style.css"> <!--CSS-->
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="content">
+			
+			<!--HEADER-->
+			<header class="main-header">
+				<div class="layers">
+					<div class="layer__header">
+						<div class="layers__caption">Parallax</div>
+						<div class="layers__title">Example Text</div>
+					</div>
+					<div class="layer layers__base" style="background-image: url(img/layer-base.png);"></div>
+					<div class="layer layers__middle" style="background-image: url(img/layer-middle.png);"></div>
+					<div class="layer layers__front" style="background-image: url(img/layer-front.png);"></div>
+				</div>
+			</header>
+			
+			<!--ARTICLE-->
+			<article class="main-article" style="background-image: url(img/dungeon.jpg);">
+				<div class="main-article__content">
+					<h2 class="main-article__header">Lorem ipsum</h2>
+					<p class="main-article__paragraph">Voluptate duis enim officia in mollit dolore. Reprehenderit id ullamco deserunt aute fugiat. Cillum ullamco ipsum eiusmod ullamco magna.</p>
+				</div>
+			</article>
+
+		</div>
+	</div>
+
+	
+	<script src="libs/gsap/gsap.min.js" defer></script> <!--loads the GSAP (GreenSock Animation Platform) library asynchronously using the defer attribute-->
+	<script src="libs/gsap/ScrollTrigger.min.js" defer></script> <!--The GSAP ScrollTrigger plugin is a powerful tool for creating engaging and interactive scroll-based animations-->
+	<script src="libs/gsap/ScrollSmoother.min.js" defer></script> <!--The GSAP ScrollSmoother plugin is a part of the GSAP ecosystem and provides capabilities for smooth scrolling-->
+	<script src="script.js" defer></script> <!--JS-->
+</body>
+</html>
